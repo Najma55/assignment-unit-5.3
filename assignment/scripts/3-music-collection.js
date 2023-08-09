@@ -21,3 +21,5 @@ addToCollection('Comin From Where Im From' , 'Anthony Hamilton' , 2003);
 console.log(collection[collection.length -1]);
 addToCollection('Acid Rap' , 'Chance The Rapper' , 2013);
 console.log(collection[collection.length -1]);
+
+console.log(collection);
