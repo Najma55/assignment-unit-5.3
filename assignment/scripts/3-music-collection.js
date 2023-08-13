@@ -25,10 +25,23 @@ console.log(collection[collection.length -1]);
 console.log(collection);
 
 function showCollection(params) {
-    console.log('Number of albums in collection,(params.length)');
+    console.log('Number of albums in collection,', (params.length));
     for(let album of params){
         console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
     }
 }showCollection(collection);
 
+
+function findByArtist(artist) {
+    let found = [];
+    for (let i = 0; i < collection.length; i++) {
+        if (collection[i].artist === artist) {
+            found.push(collection[i]); 
+        }
+    }
+    return found; 
+}
+
+console.log('Find a Chance The Rapper album:', findByArtist('Chance The Rapper'));
+console.log('Return an empty array:', findByArtist('Adele'));
 
